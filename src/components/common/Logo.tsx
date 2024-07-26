@@ -78,7 +78,7 @@ export const Logo = observer(() => {
           <Avatar
             src="/art1.png"
             alt="Test Payment img"
-            sx={{ width: 128, height: 128 }}
+            sx={{ width: 110, height: 110 }}
             imgProps={{ loading: "lazy" }}
           />
           <Typography variant="h6" sx={{ mt: -2 }}>Mr Roy</Typography>
