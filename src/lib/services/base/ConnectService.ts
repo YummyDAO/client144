@@ -57,13 +57,13 @@ export class ConnectPageService {
         try {
             await this.ethersService.request({
                 method: 'wallet_switchEthereumChain',
-                params: [{ chainId: '0x38' }],
+                params: [{ chainId: '0xaa36a7' }],
             }).catch(async (error: any) => {
                 if (error.code === 4902) {
                     await this.handleAddBsc();
                     await this.ethersService.request({
                         method: 'wallet_switchEthereumChain',
-                        params: [{ chainId: '0x38' }],
+                        params: [{ chainId: '0xaa36a7' }],
                     })
                 }
                 throw error;

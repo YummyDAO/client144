@@ -77,7 +77,7 @@ export const Logo = observer(() => {
         <Stack alignItems="center" gap="15px">
           <Avatar
             src="/art1.png"
-            alt="Peter Tripolsky"
+            alt="Test Payment img"
             sx={{ width: 128, height: 128 }}
             imgProps={{ loading: "lazy" }}
           />
@@ -101,7 +101,7 @@ export const Logo = observer(() => {
                                 </>
                             );
                         }
-                        return "Dotation recipient";
+                        return "Donation recipient";
                     }}
                 </Async>
             </Typography>

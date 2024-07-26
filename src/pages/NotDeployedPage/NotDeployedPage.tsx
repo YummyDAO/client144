@@ -59,12 +59,12 @@ export const ConnectPage = () => {
               <Async Loader={LoaderView}>
                 {async () => {
                   const chainId = await ioc.ethersService.getChainId();
-                  if (chainId !== 56) {
+                  if (chainId !== 11155111) {
                     return (
                       <>
                         <span style={{ marginTop: -10 }}>
-                          It looks like currently you are not on the Binance Smart
-                          Chain<span className="emoji">😐</span>
+                          It looks like currently you are not on the sepolia eth chain
+                          <span className="emoji">😐</span>
                           <br />
                           Would you like to switch the network?
                         </span>
@@ -72,7 +72,7 @@ export const ConnectPage = () => {
                           variant="contained"
                           onClick={ioc.connectService.handleSwitchBsc}
                         >
-                          Switch to BSC
+                          Switch to Sepolia Ethereum Chain
                         </Button>
                       </>
                     );
